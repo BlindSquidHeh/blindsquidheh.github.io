@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SquidyMix</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<script>
+  // Старый адрес сайта /MixTube/... ведёт на тот же раздел /SquidyMix/...; любые другие несуществующие адреса - на главную
+  (function () {
+    var p = location.pathname;
+    var target = /^\/MixTube(\/|$)/i.test(p) ? "/SquidyMix" + p.replace(/^\/MixTube/i, "") : "/SquidyMix/";
+    location.replace(target + location.search + location.hash);
+  })();
+</script>
+</head>
+<body style="background:#0f0f0f;color:#f1f1f1;font-family:system-ui,sans-serif;text-align:center;padding:48px 16px">
+<p>Страница переехала. <a style="color:#3ea6ff" href="/SquidyMix/">Открыть SquidyMix</a></p>
+</body>
+</html>
